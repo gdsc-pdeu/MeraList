@@ -4,10 +4,9 @@ This is a complete open-source app made with no architechture or any other fancy
 Feel free to contribute and share your thoughts about it.
 
 ## What's in this version?
-This version has a very basic implementaion of a notes making app 
+This version has a very basic implementaion of a notes making app with offline storage by Room db save, delete,fetchall
 
 ## What's to be done?
-- Storing data in Room database
 - Connecting to the cloud
 - UI improvements
 
