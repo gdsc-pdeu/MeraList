@@ -1,7 +1,10 @@
 package com.mihir.meralist
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -12,9 +15,8 @@ import kotlinx.android.synthetic.main.activity_landing_page.*
 
 class LandingPage : AppCompatActivity() {
 
-    private val listNotes =ArrayList<String>()
-
     private lateinit var mNotesViewModel: NotesViewModel
+    private lateinit var adapter: RecyclerAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,9 +29,23 @@ class LandingPage : AppCompatActivity() {
 
         mNotesViewModel.readAllData.observe(this, { Note->
 
-            recyclerView.adapter = RecyclerAdapter(Note)
+            if(Note.isNotEmpty()){
+                Log.i("TAG", "onCreate: $Note")
+                adapter = RecyclerAdapter(Note,imgV_delete)
+                recyclerView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+                recyclerView.adapter = adapter
+            }
 
         })
+
+        imgV_delete.setOnClickListener{
+            
+            val notesToDelete = adapter.noOfSelected()
+
+            for(i in notesToDelete){
+                mNotesViewModel.deleteNote(i)
+            }
+        }
 
         Txt_submit.setOnClickListener{
             val noteText = edTxt_notes.text
