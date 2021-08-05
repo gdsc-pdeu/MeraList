@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.lifecycle.Observer
@@ -29,22 +30,26 @@ class LandingPage : AppCompatActivity() {
 
         mNotesViewModel.readAllData.observe(this, { Note->
 
-            if(Note.isNotEmpty()){
-                Log.i("TAG", "onCreate: $Note")
-                adapter = RecyclerAdapter(Note,imgV_delete)
-                recyclerView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-                recyclerView.adapter = adapter
-            }
+
+            Log.i("TAG", "onCreate: $Note")
+            adapter = RecyclerAdapter(Note,imgV_delete)
+            recyclerView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+            recyclerView.adapter = adapter
+
 
         })
 
         imgV_delete.setOnClickListener{
-            
+
             val notesToDelete = adapter.noOfSelected()
 
             for(i in notesToDelete){
                 mNotesViewModel.deleteNote(i)
             }
+
+            Toast.makeText(this,"${notesToDelete.size} notes deleted",Toast.LENGTH_LONG).show()
+
+            imgV_delete.visibility = View.GONE
         }
 
         Txt_submit.setOnClickListener{
