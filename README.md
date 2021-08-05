@@ -9,6 +9,10 @@ This is a complete open-source app made with no architechture or any other fancy
 This version has a very basic implementaion of a notes making app with offline storage by Room db save, delete,fetchall, select multiple
 
 ## What's to be done?
+- Bold and Italics text
+- Checkboxes
+- Images and URL support
+- Note color assignment
 - Connecting to the cloud
 - UI improvements
 
