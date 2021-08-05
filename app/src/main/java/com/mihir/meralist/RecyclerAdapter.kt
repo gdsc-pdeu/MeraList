@@ -58,14 +58,14 @@ class RecyclerAdapter(private var notes:List<Notes>, private var imgDel:ImageVie
 
         }
 
-        holder.itemView.setOnLongClickListener(View.OnLongClickListener {
+        holder.itemView.setOnLongClickListener {
             checkedItems.add(notes[position])
             count++
             it.imgV_checked.visibility = View.VISIBLE
 
             imgDel.visibility = View.VISIBLE
-             true
-        })
+            true
+        }
 
     }
 
@@ -73,7 +73,7 @@ class RecyclerAdapter(private var notes:List<Notes>, private var imgDel:ImageVie
         return notes.size
     }
 
-    public fun noOfSelected():ArrayList<Notes>{
+    fun noOfSelected():ArrayList<Notes>{
         return checkedItems
     }
 
