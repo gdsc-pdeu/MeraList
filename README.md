@@ -1,10 +1,10 @@
 # MeraList
 
 This is a complete open-source app made with no architechture or any other fancy stuff to make it friendly for beginner devs.
-Feel free to contribute and share your thoughts about it.
+<br> Feel free to contribute and share your thoughts about it.
 
 ## What's in this version?
-This version has a very basic implementaion of a notes making app with offline storage by Room db save, delete,fetchall
+This version has a very basic implementaion of a notes making app with offline storage by Room db save, delete,fetchall, select multiple
 
 ## What's to be done?
 - Connecting to the cloud
