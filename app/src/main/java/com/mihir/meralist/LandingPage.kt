@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.core.text.toSpannable
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
@@ -58,7 +59,7 @@ class LandingPage : AppCompatActivity() {
 
             if(noteText.toString()!= ""){
 
-                val notes= Notes(0,"Title",noteText.toString())
+                val notes= Notes(0,"Title",noteText.toString().toSpannable())
                 mNotesViewModel.addNotes(notes)
 
             }
