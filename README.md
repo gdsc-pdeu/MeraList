@@ -8,8 +8,11 @@ This is a complete open-source app made with no architechture or any other fancy
 ## What's in this version?
 This version has a very basic implementaion of a notes making app with offline storage by Room db save, delete,fetchall, select multiple
 
+## Issues in this version
+Bold is not being saved as spannable is not supported by roomDB
+
 ## What's to be done?
-- Bold and Italics text
+- **Bold and Italics text storage**
 - Checkboxes
 - Images and URL support
 - Note color assignment
