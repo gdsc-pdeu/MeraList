@@ -10,6 +10,8 @@ This version has a very basic implementaion of a notes making app with offline s
 
 ## Issues in this version
 Bold is not being saved as spannable is not supported by roomDB
+#### What can be done?
+Make a meta data for corresponding selected text and store it in seprate table.
 
 ## What's to be done?
 - **Bold and Italics text storage**
