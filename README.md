@@ -3,6 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 <br>
 This is a complete open-source app made with no architechture or any other fancy stuff to make it friendly for beginner devs.
+We also aim to make a website where we can access and edit the notes. More on That soon.
 <br> Feel free to contribute and share your thoughts about it.
 
 ## What's in this version?
