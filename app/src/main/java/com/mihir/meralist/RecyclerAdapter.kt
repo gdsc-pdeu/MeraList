@@ -24,7 +24,6 @@ class RecyclerAdapter(private var notes:List<Notes>, private var imgDel:ImageVie
 
     }
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v= LayoutInflater.from(parent.context).inflate(R.layout.item_note,parent,false)
         context = parent.context
@@ -36,8 +35,6 @@ class RecyclerAdapter(private var notes:List<Notes>, private var imgDel:ImageVie
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.note.text= notes[position].text
         holder.title.text = notes[position].title
-
-
 
         holder.itemView.setOnClickListener{
 
@@ -73,7 +70,7 @@ class RecyclerAdapter(private var notes:List<Notes>, private var imgDel:ImageVie
         return notes.size
     }
 
-    fun noOfSelected():ArrayList<Notes>{
+    fun notesSelected():ArrayList<Notes>{
         return checkedItems
     }
 
