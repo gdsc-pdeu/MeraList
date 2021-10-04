@@ -55,7 +55,7 @@ class LandingPage : AppCompatActivity() {
 
         Txt_submit.setOnClickListener{
             val noteText = edTxt_notes.text
-            // giving it a empty string as heading
+            // giving it a empty string as default heading
             edTxt_notes.setText("")
 
             if(noteText.toString()!= ""){
@@ -66,7 +66,7 @@ class LandingPage : AppCompatActivity() {
             }
             else{
                 // if no text is entered and user tries to submit.
-                Toast.makeText(this,"Enter something first", Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Your note is empty", Toast.LENGTH_LONG).show()
             }
 
         }
