@@ -20,7 +20,7 @@ import kotlinx.android.synthetic.main.activity_note_edit_view.*
 class NoteEditView : AppCompatActivity() {
 
     private lateinit var mNotesViewModel: NotesViewModel
-    private lateinit var ChangedNote : Notes
+    private lateinit var changedNote : Notes
     private var idChanged = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,13 +34,13 @@ class NoteEditView : AppCompatActivity() {
         val text = intent.extras?.get("note text")
         val title = intent.extras?.get("note title")
 
-        ChangedNote = Notes(id as Int,title.toString(),text.toString().toSpannable())
+        changedNote = Notes(id as Int,title.toString(),text.toString().toSpannable())
 
-        edTxt_note_edit.setText(ChangedNote.text)
-        edTxt_Title_edit.setText(ChangedNote.title)
+        edTxt_note_edit.setText(changedNote.text)
+        edTxt_Title_edit.setText(changedNote.title)
 
         img_deleteNote.setOnClickListener{
-            mNotesViewModel.deleteNote(ChangedNote)
+            mNotesViewModel.deleteNote(changedNote)
             finish()
         }
         imgV_bold.setOnClickListener{
@@ -69,24 +69,28 @@ class NoteEditView : AppCompatActivity() {
         imgV_color.setOnClickListener{
             val colorPicker = ColorPickerDialog(
                 this,
-                Color.BLACK, // color init
-                true, // true is show alpha
+                Color.BLACK, // default color
+                true, // true is to show alpha values
                 object : ColorPickerDialog.OnColorPickerListener {
                     override fun onCancel(dialog: ColorPickerDialog?) {
                     }
                     override fun onOk(dialog: ColorPickerDialog?, colorPicker: Int) {
                         edTxt_note_edit.setTextColor(colorPicker)
                     }
-                })
-            colorPicker.show()
+                } // listener
+            )
+            colorPicker.show() // showing the color picker
         }
     }
 
     override fun onBackPressed() {
 
-        ChangedNote.title = edTxt_Title_edit.text.toString()
-        ChangedNote.text = edTxt_note_edit.text
-        mNotesViewModel.updateNote(ChangedNote)
+        changedNote.title = edTxt_Title_edit.text.toString()
+        changedNote.text = edTxt_note_edit.text
+        mNotesViewModel.updateNote(changedNote)
+
         super.onBackPressed()
+        overridePendingTransition(R.anim.fadein,R.anim.fadeout)
+
     }
 }

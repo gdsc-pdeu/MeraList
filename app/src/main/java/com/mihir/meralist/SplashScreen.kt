@@ -14,6 +14,7 @@ class SplashScreen : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this,LandingPage::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.fadein,R.anim.fadeout)
             finish()
         },1500)
     }
