@@ -13,52 +13,94 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
+        android:autofillHints="no"
         android:background="@drawable/typingsection"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:minHeight="48dp"
         android:text="Title"
+        android:hint="Add a Title"
+        android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="no" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <EditText
         android:id="@+id/edTxt_note_edit"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="336dp"
+        android:layout_height="621dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/typingsection"
+        android:background="@drawable/custom_background"
+
         android:ems="10"
         android:gravity="start|top"
         android:importantForAutofill="no"
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/img_deleteNote"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/edTxt_Title_edit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/edTxt_Title_edit"
+        app:layout_constraintVertical_bias="0.421"
         app:srcCompat="@drawable/ic_baseline_delete_24" />
 
     <ImageView
+        android:id="@+id/homeBtn"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edTxt_Title_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edTxt_Title_edit"
+        app:srcCompat="@drawable/ic_home" />
+
+    <ImageView
         android:id="@+id/imgV_bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/img_deleteNote"
-        app:layout_constraintStart_toEndOf="@+id/edTxt_Title_edit"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_bold" />
+        app:layout_constraintVertical_bias="0.244"
+        app:srcCompat="@drawable/bold" />
+
+    <ImageView
+        android:id="@+id/imgV_italic"
+        android:layout_width="41dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toEndOf="@+id/edTxt_note_edit"
+        app:layout_constraintTop_toBottomOf="@+id/imgV_bold"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/i" />
+
+    <ImageView
+        android:id="@+id/imgV_color"
+        android:layout_width="41dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgV_italic"
+        app:layout_constraintVertical_bias="0.11"
+        app:srcCompat="@drawable/ic_color" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -68,4 +110,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edTxt_Title_edit"
         app:srcCompat="@drawable/ic_launcher_background" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
