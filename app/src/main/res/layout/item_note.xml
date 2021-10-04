@@ -30,7 +30,7 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="8dp"
                 android:text="Title"
-                android:textColor="#121212"
+                android:textColor="#ffffff"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -45,7 +45,7 @@
                 android:layout_marginBottom="5dp"
                 android:fontFamily="sans-serif-light"
                 android:text="Content will appear here"
-                android:textColor="#4A4A4A"
+                android:textColor="#ffffff"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Txt_Title" />

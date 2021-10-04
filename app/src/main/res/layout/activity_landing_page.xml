@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BFBDBD"
+    android:background="#ffffff"
     tools:context=".LandingPage">
 
     <include
@@ -45,12 +45,12 @@
             android:id="@+id/Txt_submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="@font/roboto"
-            android:text="Done"
             android:maxLines="5"
-            android:textColor="#606CDD"
-            android:textSize="16sp"
+            android:text="+"
+            android:textColor="#1e3a5f"
+            android:textSize="36sp"
             app:layout_constraintBottom_toBottomOf="@+id/edTxt_notes"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/edTxt_notes" />

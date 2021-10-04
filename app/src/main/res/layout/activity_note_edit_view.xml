@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#4C4B4B"
+    android:background="#1e3a5f"
     android:layout_height="match_parent"
     tools:context=".NoteEditView">
 
@@ -32,7 +32,7 @@
         android:id="@+id/edTxt_note_edit"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
+        android:textColor="@color/white"
         android:layout_marginStart="2dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/custom_background"
