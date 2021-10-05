@@ -3,103 +3,88 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#1e3a5f"
+    android:background="#ffffff"
     android:layout_height="match_parent"
     tools:context=".NoteEditView">
+
 
     <EditText
         android:id="@+id/edTxt_Title_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
         android:autofillHints="no"
-        android:background="@drawable/typingsection"
+        android:background="#ffffff"
         android:ems="10"
-        android:gravity="start|top"
+        android:gravity="bottom"
+        android:hint="Add a Title"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
         android:text="Title"
-        android:hint="Add a Title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         android:textColorHint="@color/white"
-        android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <EditText
-        android:id="@+id/edTxt_note_edit"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:textColor="@color/white"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/custom_background"
-        android:ems="10"
-        android:gravity="start|top"
-        android:importantForAutofill="no"
-        android:inputType="textMultiLine"
-        android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imgV_bold"
+        app:layout_constraintEnd_toStartOf="@+id/homeBtn"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054"
+        tools:ignore="RtlCompat" />
 
     <ImageView
         android:id="@+id/img_deleteNote"
-        android:layout_width="33dp"
-        android:layout_height="32dp"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/edTxt_Title_edit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/edTxt_Title_edit"
-        app:layout_constraintVertical_bias="0.421"
+        app:layout_constraintVertical_bias="0.846"
         app:srcCompat="@drawable/ic_baseline_delete_24" />
 
     <ImageView
         android:id="@+id/homeBtn"
         android:layout_width="36dp"
         android:layout_height="35dp"
-        android:layout_marginEnd="19dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/edTxt_Title_edit"
         app:layout_constraintEnd_toStartOf="@+id/img_deleteNote"
         app:layout_constraintTop_toTopOf="@+id/edTxt_Title_edit"
+        app:layout_constraintVertical_bias="0.846"
         app:srcCompat="@drawable/ic_home" />
 
     <ImageView
         android:id="@+id/imgV_bold"
-        android:layout_width="39dp"
+        android:layout_width="41dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.244"
-        app:srcCompat="@drawable/bold" />
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:srcCompat="@drawable/ic_bold" />
 
     <ImageView
         android:id="@+id/imgV_italic"
         android:layout_width="41dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgV_bold"
-        app:layout_constraintVertical_bias="0.08"
-        app:srcCompat="@drawable/i" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:srcCompat="@drawable/ic_italic" />
 
     <ImageView
         android:id="@+id/imgV_color"
         android:layout_width="41dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgV_italic"
-        app:layout_constraintVertical_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
         app:srcCompat="@drawable/ic_color" />
 
     <ImageView
@@ -110,5 +95,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edTxt_Title_edit"
         app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_Title_edit"
+        app:layout_constraintVertical_bias="0.206">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edTxt_note_edit"
+                android:layout_width="389dp"
+                android:layout_height="520dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/custom_background"
+                android:ems="10"
+                android:gravity="clip_horizontal"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.18"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
