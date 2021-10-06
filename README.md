@@ -21,7 +21,6 @@ Make a meta data for corresponding selected text and store it in seprate room ta
 - Images and URL support
 - Note color assignment
 - Connecting to the cloud
-- UI improvements
 
 ## What do you need to get started?
 #### Latest version of android studio and basic android and googling skills will get you going.
@@ -30,19 +29,12 @@ Make a meta data for corresponding selected text and store it in seprate room ta
 All contributions are welcomed, Properly describe changes made and attach supporting ScreenShots in the PR. For major changes first open an issue.
 
 ## Author
-<a href="https://github.com/Miihir79">***Mihir Shah***</a>
+Initial work:<a href="https://github.com/Miihir79">***Mihir Shah***</a>
+UI changes: <a href="https://github.com/ParikshitAgarwal">***Parikshit Agarwal***</a>
+UI changes: <a href="https://github.com/Utsav-Mehta">***Utsav Mehta***</a>
+UI changes: <a href="https://github.com/patelkevin45">***Kevin Patel***</a>
 
 ## Images of Change
 ![ss1](https://user-images.githubusercontent.com/88677301/136008897-69ee18c5-67a4-43f0-be78-0381ed4f2f9a.png)
 ![ss2](https://user-images.githubusercontent.com/88677301/136008920-8fd1d5d1-6582-4910-accc-9ca9363a261c.png)
-![WhatsApp Image 2021-10-04 at 19 50 41](https://user-images.githubusercontent.com/81905399/135868828-6c3cae98-78fd-49e0-845d-5252d63d95fd.jpeg)
-![WhatsApp Image 2021-10-04 at 19 51 11](https://user-images.githubusercontent.com/81905399/135868856-b344a799-27c8-418e-95a8-7e3b4be4c2ca.jpeg)
-![WhatsApp Image 2021-10-04 at 19 51 24](https://user-images.githubusercontent.com/81905399/135868891-1b2fce4d-1078-456b-8b25-690e208b5078.jpeg)
-![WhatsApp Image 2021-10-04 at 19 53 21](https://user-images.githubusercontent.com/81905399/135868921-15f83215-9d14-4b55-8d3b-ccde57ec0ae0.jpeg)
-
-
-
-
-
-
 
