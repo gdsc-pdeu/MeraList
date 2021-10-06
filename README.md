@@ -29,12 +29,16 @@ Make a meta data for corresponding selected text and store it in seprate room ta
 All contributions are welcomed, Properly describe changes made and attach supporting ScreenShots in the PR. For major changes first open an issue.
 
 ## Author
-Initial work:<a href="https://github.com/Miihir79">***Mihir Shah***</a>
-UI changes: <a href="https://github.com/ParikshitAgarwal">***Parikshit Agarwal***</a>
-UI changes: <a href="https://github.com/Utsav-Mehta">***Utsav Mehta***</a>
+Initial work:<a href="https://github.com/Miihir79">***Mihir Shah***</a> <br>
+UI changes: <a href="https://github.com/ParikshitAgarwal">***Parikshit Agarwal***</a> <br>
+UI changes + added Italics and color in edit notes: <a href="https://github.com/Utsav-Mehta">***Utsav Mehta***</a> <br>
 UI changes: <a href="https://github.com/patelkevin45">***Kevin Patel***</a>
 
-## Images of Change
-![ss1](https://user-images.githubusercontent.com/88677301/136008897-69ee18c5-67a4-43f0-be78-0381ed4f2f9a.png)
-![ss2](https://user-images.githubusercontent.com/88677301/136008920-8fd1d5d1-6582-4910-accc-9ca9363a261c.png)
+## Images of Latest app
 
+<table>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/66465511/136174117-d4ccb4fe-0721-445b-93e7-7bd73eab04b6.jpg" width="350">
+    <td><img src="https://user-images.githubusercontent.com/66465511/136174124-1369dccd-b769-4bbe-92b9-73133d9709b4.jpg" width="350">
+    <td><img src="https://user-images.githubusercontent.com/66465511/136174128-14f873c4-7ef8-4526-ba9e-dde7d469d300.jpg" width="350">
+</table>
