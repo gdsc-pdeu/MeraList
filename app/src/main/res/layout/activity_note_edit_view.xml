@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:autofillHints="no"
         android:background="#ffffff"
         android:ems="10"
@@ -21,16 +22,13 @@
         android:inputType="textMultiLine"
         android:minHeight="48dp"
         android:text="Title"
-        android:textAlignment="center"
         android:textColor="@color/black"
         android:textColorHint="@color/white"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/homeBtn"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.054"
         tools:ignore="RtlCompat" />
 
     <ImageView
@@ -59,32 +57,32 @@
         android:id="@+id/imgV_bold"
         android:layout_width="41dp"
         android:layout_height="39dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.275"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
         app:srcCompat="@drawable/ic_bold" />
 
     <ImageView
         android:id="@+id/imgV_italic"
         android:layout_width="41dp"
         android:layout_height="39dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:srcCompat="@drawable/ic_italic" />
+        app:srcCompat="@drawable/ic_baseline_format_italic_24" />
 
     <ImageView
         android:id="@+id/imgV_color"
         android:layout_width="41dp"
         android:layout_height="39dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.705"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
         app:srcCompat="@drawable/ic_color" />
 
     <ImageView
@@ -96,45 +94,27 @@
         app:layout_constraintTop_toBottomOf="@+id/edTxt_Title_edit"
         app:srcCompat="@drawable/ic_launcher_background" />
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <EditText
+        android:id="@+id/edTxt_note_edit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_background"
+        android:gravity="clip_horizontal"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/imgV_italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edTxt_Title_edit"
-        app:layout_constraintVertical_bias="0.206">
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/edTxt_note_edit"
-                android:layout_width="389dp"
-                android:layout_height="520dp"
-                android:layout_marginTop="4dp"
-                android:background="@drawable/custom_background"
-                android:ems="10"
-                android:gravity="clip_horizontal"
-                android:importantForAutofill="no"
-                android:inputType="textMultiLine"
-                android:padding="5dp"
-                android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView"
-                app:layout_constraintVertical_bias="0.18"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"></LinearLayout>
-        </LinearLayout>
-    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
