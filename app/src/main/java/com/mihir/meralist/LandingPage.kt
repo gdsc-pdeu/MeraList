@@ -1,10 +1,12 @@
 package com.mihir.meralist
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.core.text.toSpannable
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
@@ -22,6 +24,8 @@ class LandingPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_landing_page)
         supportActionBar?.hide()
+        //#394067
+        window.statusBarColor = ContextCompat.getColor(this,R.color.statusbar)
         // initializing our viewModel
         mNotesViewModel = ViewModelProvider(this).get(NotesViewModel::class.java)
         // setting up the recycleView
