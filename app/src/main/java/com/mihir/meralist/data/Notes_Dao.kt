@@ -7,17 +7,17 @@ import androidx.room.*
 interface Notes_Dao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun addNote(note:Notes)
+   suspend fun addNote(note:Notes)
 
     @Query("SELECT * from notes_table")
     fun readAllNodes():LiveData<List<Notes>>
 
     @Update
-    fun updateNote(note: Notes)
+    suspend fun updateNote(note: Notes)
 
     @Query("Select * from notes_table where id is :sentId")
     fun sendNote(sentId:Int):Notes
 
     @Delete
-    fun deleteNote(note: Notes)
+    suspend fun deleteNote(note: Notes)
 }
