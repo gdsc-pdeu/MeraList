@@ -35,7 +35,7 @@ UI changes + added Italics and color in edit notes: <a href="https://github.com/
 UI changes & other enhancements: <a href="https://github.com/siddhraj-sinh">***Siddhraj Rathod***</a> <br>
 UI changes: <a href="https://github.com/patelkevin45">***Kevin Patel***</a>
 
-## Images of Latest app
+## Current images of the app
 
 <table>
   <tr>
