@@ -28,8 +28,8 @@ Make a meta data for corresponding selected text and store it in seprate room ta
 ## How to contribute?
 All contributions are welcomed, Properly describe changes made and attach supporting ScreenShots in the PR. For major changes first open an issue.
 
-## Authors
-Initial work: <a href="https://github.com/Miihir79">***Mihir Shah***</a> <br>
+## Author and contributors
+Initial work and maintaining: <a href="https://github.com/Miihir79">***Mihir Shah***</a> <br>
 UI changes: <a href="https://github.com/ParikshitAgarwal">***Parikshit Agarwal***</a> <br>
 UI changes + added Italics and color in edit notes: <a href="https://github.com/Utsav-Mehta">***Utsav Mehta***</a> <br>
 UI changes & other enhancements: <a href="https://github.com/siddhraj-sinh">***Siddhraj Rathod***</a> <br>
