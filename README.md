@@ -17,6 +17,7 @@ Make a meta data for corresponding selected text and store it in seprate room ta
 
 ## What's to be done?
 - **Bold and Italics text storage**
+- **Adding text through image detection**
 - Checkboxes
 - Images and URL support
 - Note color assignment
